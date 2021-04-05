@@ -22,151 +22,162 @@
 <body>
     <div id="wrapper">
         <header id="header"
-            style="background: url(./assets/images/photo/background.jpg) no-repeat fixed center / cover;"
-            class="">
+            style="background: url(./assets/images/photo/background.jpg) no-repeat fixed center / cover;" class="">
             <nav class="header__nav">
                 <div class="header__logo">
                     <a href="./index.html" class="header__logo-link"><img src="./assets/images/icon/logo.png" alt="logo"
                             class="header__logo-img img-responsive"></a>
                 </div>
                 <div class="header__menu">
-                    <ul class="header__menu-list">
-                        <li class="header__menu-item"><a href="./" class="header__menu-link">HOME</a></li>
-                        <li class="header__menu-item">
-                            <a href="./" class="header__menu-link">PACKAGES</a>
-                            <ul class="header__menu-sub">
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link header__menu-sub-link--hot">SEARCH1</a>
-                                </li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">SEARCH2</a>
-                                </li>
-                                <li class="header__menu-sub-item">
-                                    <a href="./" class="header__menu-sub-link">TOUR
-                                        PACKAGE</a>
-                                    <i class="fas fa-caret-right header__menu-sub-icon"></i>
-                                    <ul class="header__menu-sub">
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link header__menu-sub-link--best">Carousel</a>
-                                        </li>
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link">Custom Map</a>
-                                        </li>
-                                        <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">360
-                                                Panorama</a>
+                    <input id='header__menu-dropdown' type='checkbox'>
+                    <label for='header__menu-dropdown' class="header__menu-icon">
+                        <img src="./assets/images/photo/menu.png" class="img-responsive header__menu-img"
+                            alt=""></label>
+                    <div class="header__menu-list-wp">
+                        <label for='header__menu-dropdown' class="header__menu-list-icon">
+                            <i class="far fa-times-circle header__menu-icon"></i></label>
 
-                                        </li>
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link">Default</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link">DESTINATION</a></li>
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link">TYPOLOGY</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item">
-                            <a href="./" class="header__menu-link">SHOP</a>
-                            <ul class="header__menu-sub">
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">ARCHIVE</a>
-                                </li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">SINGLE
-                                        PRODUCT</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">CART</a>
-                                </li>
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link">CHECKOUT</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="./" class="header__menu-link">ABOUT US</a>
-                            <ul class="header__menu-sub">
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link header__menu-sub-link--new">ABOUT US
-                                        1</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">ABOUT US
-                                        2</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">ABOUT US
-                                        3</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="./" class="header__menu-link">PAGE</a>
-                            <ul class="header__menu-sub">
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link header__menu-sub-link--new">Page
-                                        1</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
-                                        2</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
-                                        3</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="./" class="header__menu-link">NEWS</a>
-                            <ul class="header__menu-sub">
-                                <li class="header__menu-sub-item"><a href="./"
-                                        class="header__menu-sub-link header__menu-sub-link--new">News
-                                        1</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
-                                        2</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
-                                        3</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
-                                        4</a>
-                                    <i class="fas fa-caret-right header__menu-sub-icon"></i>
-                                    <ul class="header__menu-sub">
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link header__menu-sub-link--best">News
-                                                1</a></li>
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link">News
-                                                2
-                                                <i class="fas fa-caret-right header__menu-sub-icon"></i>
-                                                <ul class="header__menu-sub">
-                                                    <li class="header__menu-sub-item"><a href="./"
-                                                            class="header__menu-sub-link header__menu-sub-link--hot">News
-                                                            1</a></li>
-                                                    <li class="header__menu-sub-item"><a href="./"
-                                                            class="header__menu-sub-link">News
-                                                            2</a></li>
-                                                    <li class="header__menu-sub-item"><a href="./"
-                                                            class="header__menu-sub-link">News
-                                                            3</a></li>
-                                                </ul>
-                                            </a></li>
-                                        <li class="header__menu-sub-item"><a href="./"
-                                                class="header__menu-sub-link">News
-                                                3</a></li>
-                                    </ul>
-                                </li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
-                                        5</a></li>
-                                <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
-                                        6</a></li>
-                            </ul>
-                        </li>
-                        <li class="header__menu-item"><a href="./" class="header__menu-link">CONTACT</a></li>
-                        <li class="header__menu-item btn btn--purple"><a href="./" class="header__menu-link">BOOK
-                                NOW</a></li>
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item"><a href="./" class="header__menu-link">HOME</a></li>
+                            <li class="header__menu-item">
+                                <a href="./" class="header__menu-link">PACKAGES</a>
+                                <ul class="header__menu-sub">
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link header__menu-sub-link--hot">SEARCH1</a>
+                                    </li>
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">SEARCH2</a>
+                                    </li>
+                                    <li class="header__menu-sub-item">
+                                        <a href="./" class="header__menu-sub-link">TOUR
+                                            PACKAGE</a>
+                                        <i class="fas fa-caret-right header__menu-sub-icon"></i>
+                                        <ul class="header__menu-sub">
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link header__menu-sub-link--best">Carousel</a>
+                                            </li>
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link">Custom Map</a>
+                                            </li>
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link">360
+                                                    Panorama</a>
 
-                    </ul>
+                                            </li>
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link">Default</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">DESTINATION</a></li>
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">TYPOLOGY</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="./" class="header__menu-link">SHOP</a>
+                                <ul class="header__menu-sub">
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">ARCHIVE</a>
+                                    </li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">SINGLE
+                                            PRODUCT</a></li>
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">CART</a>
+                                    </li>
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link">CHECKOUT</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item"><a href="./" class="header__menu-link">ABOUT US</a>
+                                <ul class="header__menu-sub">
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link header__menu-sub-link--new">ABOUT US
+                                            1</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">ABOUT
+                                            US
+                                            2</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">ABOUT
+                                            US
+                                            3</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item"><a href="./" class="header__menu-link">PAGE</a>
+                                <ul class="header__menu-sub">
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link header__menu-sub-link--new">Page
+                                            1</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
+                                            2</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
+                                            3</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item"><a href="./" class="header__menu-link">NEWS</a>
+                                <ul class="header__menu-sub">
+                                    <li class="header__menu-sub-item"><a href="./"
+                                            class="header__menu-sub-link header__menu-sub-link--new">News
+                                            1</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
+                                            2</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
+                                            3</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
+                                            4</a>
+                                        <i class="fas fa-caret-right header__menu-sub-icon"></i>
+                                        <ul class="header__menu-sub">
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link header__menu-sub-link--best">News
+                                                    1</a></li>
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link">News
+                                                    2
+                                                    <i class="fas fa-caret-right header__menu-sub-icon"></i>
+                                                    <ul class="header__menu-sub">
+                                                        <li class="header__menu-sub-item"><a href="./"
+                                                                class="header__menu-sub-link header__menu-sub-link--hot">News
+                                                                1</a></li>
+                                                        <li class="header__menu-sub-item"><a href="./"
+                                                                class="header__menu-sub-link">News
+                                                                2</a></li>
+                                                        <li class="header__menu-sub-item"><a href="./"
+                                                                class="header__menu-sub-link">News
+                                                                3</a></li>
+                                                    </ul>
+                                                </a></li>
+                                            <li class="header__menu-sub-item"><a href="./"
+                                                    class="header__menu-sub-link">News
+                                                    3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
+                                            5</a></li>
+                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">News
+                                            6</a></li>
+                                </ul>
+                            </li>
+                            <li class="header__menu-item"><a href="./" class="header__menu-link">CONTACT</a></li>
+                            <li class="header__menu-item btn btn--purple"><a href="./" class="header__menu-link">BOOK
+                                    NOW</a></li>
+
+                        </ul>
+                    </div>
+
                 </div>
                 <div class="header__option">
-
-                    <span class="header__option-icon">
-                        <input id='add-item-dropdown' type='checkbox'>
-                        <label for='add-item-dropdown'>
+                    <div class="header__option-wrapper">
+                        <input id='header__option-dropdown' type='checkbox'>
+                        <label for='header__option-dropdown' class="header__option-icon">
                             <img src="./assets/images/photo/menu.png" class="img-responsive" alt=""></label>
-
-
                         <div class="header__option-menu">
-                            <input id='add-item-dropdown' type='checkbox'>
-                            <label for='add-item-dropdown' class="header__option-toggle">
+                            <label for='header__option-dropdown' class="header__option-toggle">
                                 <i class="far fa-times-circle header__option-menu-icon"></i></label>
 
                             <div class="header__option-best-package">
                                 <div class="header__option-title">
                                     <span class="header__option-title-first">BEST</span>
-                                    <h3 class="header__option-title-second">PACKAGES</h3>
+                                    <u class="header__option-title-second">PACKAGES</u>
                                 </div>
                                 <div class="header__option-package">
                                     <div class="row">
@@ -243,8 +254,8 @@
                             </div>
                             <div class="header__option-last-package">
                                 <div class="header__option-title">
-                                    <span class="header__option-title-first">BEST</span>
-                                    <h3 class="header__option-title-second">PACKAGES</h3>
+                                    <span class="header__option-title-first">LAST</span>
+                                    <u class="header__option-title-second">MINUTES</u>
                                 </div>
                                 <div class="header__option-package">
                                     <div class="row">
@@ -299,8 +310,8 @@
                                     </div>
                                 </div>
                             </div>
-
                         </div>
+                    </div>
                 </div>
             </nav>
             <section class="header__content">
