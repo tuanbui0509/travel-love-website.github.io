@@ -1,14 +1,20 @@
 :root {
     --second-color: #878787;
-    --bold-color: #333;
+    --bold-color: #555555;
     --text-color: white;
-    --color-sky: #1bbc9b;
-    --color-purple: #ba71da;
     --color-text-light: #a3a3a3;
     --color-text-menu: #9a9a9a;
     --color-label-new: #1bbc9b;
     --color-label-best: #14b9d5;
-    --color-label-hot: #f76570;
+    --color-border: rgb(240, 239, 239);
+    --color-green: #1bbc9b;
+    --color-purple: #ba71da;
+    --color-sky: #14b9d5;
+    --color-red: #f76570;
+    --color-yellow: #ffd205;
+    --color-yellow-radiant: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+    --color-red-radiant: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    --color-purple-radiant:linear-gradient(to right, #ba71da 0%, #da717b 100%);
 }
 
 html, body {
@@ -23,6 +29,16 @@ a {
     text-decoration: none;
     color: var(--text-color);
     color: inherit;
+}
+
+p {
+    color: var(--color-text-light);
+    font-size: 15px;
+    line-height: 30px;
+}
+
+section {
+    padding: 80px 0;
 }
 
 .d-flex {
@@ -75,17 +91,20 @@ textarea, input[type=text] {
 }
 
 .btn {
-    padding: 5px 25px 5px 25px!important;
+    padding: 8px 25px 8px 25px!important;
     border-radius: 30px;
     outline: none;
     border: none;
     cursor: pointer;
-    display: block;
     color: white;
 }
 
 .btn--purple {
     background: var(--color-purple);
+}
+
+.btn--sky {
+    background: var(--color-green);
 }
 
 .heading-title {
@@ -106,19 +125,32 @@ textarea, input[type=text] {
 
 .heading-title--sky {
     text-decoration: underline;
-    text-decoration-color: var(--color-sky);
+    text-decoration-color: var(--color-green);
 }
 
-.btn--orange-gradient {
-    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+.heading-title--red {
+    text-decoration: underline;
+    text-decoration-color: var(--color-red);
+}
+
+.btn--yellow-gradient {
+    background: var(--color-yellow-radiant);
 }
 
 .btn--red-gradient {
-    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+    background: var(--color-red-radiant);
 }
 
 .btn--purple-gradient {
-    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    background: var(--color-purple-radiant);
+}
+
+.color-green{
+    color: var(--color-green);
+}
+
+.color-red{
+    color: var(--color-red);
 }
 
 .destination-front {
@@ -130,7 +162,7 @@ textarea, input[type=text] {
     flex: 1;
 }
 
-.destination-title{
+.destination-title {
     font-size: 20px;
 }
 
@@ -143,24 +175,26 @@ textarea, input[type=text] {
     z-index: 1000;
 }
 
-.destination-item{
+.destination-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 20px 0;
 }
 
-.destination-link{
+.destination-link {
     padding: 15px;
 }
 
 .destination-info {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 .destination-number {
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 400;
+    letter-spacing: 3px;
 }
 
 .destination-back {
@@ -178,14 +212,14 @@ textarea, input[type=text] {
     opacity: 0;
 }
 
-.destination-background-modal{
+.destination-background-modal {
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
-    background: -webkit-linear-gradient(top, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
-    background: linear-gradient(to bottom, rgba(101,100,96,0) 0%,rgba(101,100,96,0.1) 60%,rgba(101,100,96,0.65) 100%);
+    background: -webkit-linear-gradient(top, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.1) 60%, rgba(101, 100, 96, 0.65) 100%);
+    background: linear-gradient(to bottom, rgba(101, 100, 96, 0) 0%, rgba(101, 100, 96, 0.1) 60%, rgba(101, 100, 96, 0.65) 100%);
 }
 
 .destination-btn {
@@ -199,18 +233,18 @@ textarea, input[type=text] {
     background-color: white;
 }
 
-.content__heading{
+.content__heading {
     text-align: center;
     margin-bottom: 40px;
 }
 
-.content__heading-first{
+.content__heading-first {
     color: var(--second-color);
     font-size: 16px;
     margin-bottom: 20px;
 }
 
-.content__heading-second{
+.content__heading-second {
     color: var(--bold-color);
     font-size: 40px;
 }

@@ -71,10 +71,9 @@ label.header__option-toggle {
     bottom: 0%;
 }
 
-[type=checkbox]:checked~.header__menu-list-icon{
+[type=checkbox]:checked~.header__menu-list-icon {
     display: block;
 }
-
 
 [type=checkbox]:checked~.header__option-menu {
     transition: all 1s ease;
@@ -95,8 +94,6 @@ label.header__option-toggle {
 
 /* ======== style menu responsive ========= */
 
-
-
 .header__menu-icon {
     display: block;
     text-align: right;
@@ -106,15 +103,14 @@ label.header__option-toggle {
     z-index: 1000;
 }
 
-
-.header__menu-list-icon{
+.header__menu-list-icon {
     position: absolute;
     right: 50px;
     top: 25px;
     color: white;
 }
 
-.header__menu-icon{
+.header__menu-icon {
     font-size: 32px;
     color: var(--text-color);
     margin-right: 12px;
@@ -185,7 +181,7 @@ label.header__option-toggle {
     content: "HOT";
     position: absolute;
     right: 15px;
-    background-color: var( --color-label-hot);
+    background-color: var( --color-red);
     border-radius: 3px;
     color: #fff;
     font-size: 10px;
@@ -463,7 +459,11 @@ label.header__option-toggle {
     padding: 100px 0;
 }
 
-.content__destination-item{
+.content__destination {
+    padding-bottom: 50px;
+}
+
+.content__destination-item {
     position: relative;
     height: 400px;
     cursor: pointer;
@@ -475,24 +475,26 @@ label.header__option-toggle {
     cursor: pointer;
 }
 
-.content__destination-item:hover .destination-heading{
+.content__destination-item:hover .destination-heading {
     opacity: 0;
 }
 
-
 /* ====== style banner ======*/
 
-.content__banner{
+.content__banner {
     height: 30vh;
 }
-.content__banner-wp{
-    height: 100%; 
+
+.content__banner-wp {
+    height: 100%;
 }
+
 .row.content__banner-item {
     align-items: center;
     justify-content: center;
-    height: 100%; 
+    height: 100%;
 }
+
 .content__banner-btn {
     padding: 15px 25px!important;
     border-radius: 30px;
@@ -504,10 +506,246 @@ label.header__option-toggle {
     margin: 0 auto;
 }
 
+/* ===== style content__about ====== */
 
+.content__about {
+    padding: 100px 0;
+}
 
+.content__about-info {
+    margin-bottom: 100px;
+}
 
+.content__about-info .content__heading {
+    text-align: left;
+}
 
+.content__about-price {
+    display: flex;
+    align-items: center;
+    margin: 30px 0;
+}
+
+.content__about-price span:first-child {
+    color: #dadada;
+    text-decoration: line-through;
+    font-size: 30px;
+}
+
+.content__about-price span:nth-child(2) {
+    margin: 0 15px;
+    color: var(--bold-color);
+    font-size: 30px;
+}
+
+.content__about-price span:last-child {
+    color: var(--color-text-light);
+    font-size: 20px;
+}
+
+.content__about-btn {
+    padding: 10px 35px;
+    border-radius: 30px;
+}
+
+.content__about-slider {
+    position: relative;
+}
+
+.content__about-box-item {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.content__about-box-icon {
+    width: 50px;
+    height: 50px;
+    margin-right: 30px;
+}
+
+.content__about-box-title {
+    font-size: 25px;
+    color: var(--bold-color);
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.content__about-box-link {
+    display: block;
+    margin-top: 20px;
+    color: var(--color-sky);
+    letter-spacing: 2px;
+}
+
+.content__about-slider-item {
+    height: 400px;
+    width: 100%;
+}
+
+.owl-dots {
+    position: absolute;
+    top: 10px;
+    right: 35%;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 60px!important;
+    height: 3px!important;
+    /* background: rgba(255, 255, 255, 0.5)!important; */
+}
+
+.owl-theme .owl-dots .owl-dot.active span {
+    background: white;
+}
+
+.content__about-time-book {
+    /* position: absolute; */
+    z-index: 100;
+    top: 70%;
+}
+
+.content__about-time-list {
+    background-color: var(--color-sky);
+    position: absolute;
+    z-index: 100;
+    top: 80%;
+    right: 15%;
+}
+
+.content__about-time-item {
+    padding: 30px;
+    text-align: center;
+    position: relative;
+}
+
+.content__about-time-item::after {
+    position: absolute;
+    content: '/';
+    font-size: 45px;
+    font-weight: 100;
+    z-index: 9;
+    opacity: 0.3;
+    top: 30px;
+    right: -12px;
+    line-height: 60px;
+}
+
+.content__about-time-list .col:last-child .content__about-time-item::after {
+    content: '';
+}
+
+.content__about-time-item span:first-child {
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.content__about-time-item span:last-child {
+    font-size: 13px;
+}
+
+/* ====== style discovery ======== */
+
+.content__discovery-item {
+    height: 30vh;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.content__discovery-heading {
+    font-size: 20px;
+    color: var(--text-color);
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.content__discovery-title {
+    margin: 20px 0 40px 0;
+    font-size: 35px;
+}
+
+.content__discovery-btn {
+    background-color: white;
+    /* color: var(--color-red); */
+    padding: 10px 30px!important;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+/* ====== style content__package ======== */
+
+.content__package {
+    padding: 50px 0;
+}
+
+.content__package-item {
+    border: 1px solid var(--color-border);
+    margin-bottom: 30px;
+}
+
+.content__package-thumb{
+    position: relative;
+}
+
+.content__package-img-icon-wp{
+    position: absolute;
+    padding: 10px;
+    border-radius: 100%;
+    right: 20px;
+    bottom: -20px;
+}
+
+.content__package-img-icon{
+    width: 30px;
+
+}
+
+.content__package-info{
+    padding: 20px 20px 40px 20px;
+}
+
+.content__package-info-price,.content__package-info-title{
+    border-bottom: 1px solid var(--color-border);
+    padding: 20px 0;
+}
+.content__package-info-name{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--bold-color);
+    display: block;
+    margin-bottom: 10px;
+}
+.content__package-info-location{
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--color-text-light);
+    letter-spacing: 2px;
+}
+
+.content__package-info-price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.content__package-info-label{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--bold-color);
+}
+.content__package-info-cost{
+    font-size: 23px;
+    color: var(--bold-color);
+    font-weight: 500;
+}
+.content__package-info-text{
+    letter-spacing: 1px;
+    font-size: 14px;
+    margin: 20px 0;
+}
+.content__package-info-btn{
+    /* background: var(--color-yellow); */
+    font-size: 16px;
+}
 
 @media only screen and (max-width: 1239px) {
     .header__menu {
@@ -516,8 +754,7 @@ label.header__option-toggle {
     .header__menu-icon {
         display: block;
     }
-
-    .header__menu-list-wp{
+    .header__menu-list-wp {
         display: block;
         position: absolute;
         background: #555555;
@@ -528,7 +765,6 @@ label.header__option-toggle {
         bottom: 0;
         z-index: 1000;
     }
-
     .header__menu-list {
         flex-direction: column;
         justify-content: flex-start;
@@ -548,37 +784,75 @@ label.header__option-toggle {
         transition: all 05s ease-in-out;
         z-index: 10000;
     }
-
-    .header__menu-sub-item:hover{
+    .header__menu-sub-item:hover {
         background: #6b6b6b;
         color: var(--text-color);
     }
-
     .header__menu-sub-item:hover>.header__menu-sub {
         left: 100%;
         top: 0;
         transition: all 05s ease-in-out;
     }
-
-    .header__menu-sub-link{
+    .header__menu-sub-link {
         font-size: 14px;
     }
-
     .header__menu-sub-item:hover>.header__menu-sub {
         left: 5%;
         top: 100%;
     }
-    
     .header__option {
         display: none;
     }
     .header__typology-item {
         margin-bottom: 20px;
     }
+    .content__about-time-item {
+        /* right: 20%; */
+        padding: 20px;
+    }
 }
 
 @media (min-width: 740px) and (max-width: 1023px) {
     .header__logo {
         flex: 1;
+    }
+    .content__about-slider {
+        margin-top: 50px;
+    }
+    .content__about-time-list {
+        right: 0%;
+        left: 0%;
+    }
+    .content__about-time-item::after {
+        font-size: 45px;
+        top: 10px;
+        right: -12px;
+        line-height: 60px;
+    }
+}
+
+@media (max-width: 740px) {
+    .content__about-slider {
+        margin-top: 50px;
+    }
+    .content__about-price span:first-child {
+        font-size: 20px;
+    }
+    .content__about-price span:nth-child(2) {
+        font-size: 18px;
+        margin: 0 8px;
+    }
+    .content__about-price span:last-child {
+        font-size: 16px;
+    }
+    .content__about-time-list {
+        right: 0%;
+        left: 0%;
+    }
+    .content__about-time-item::after {
+        font-size: 45px;
+        top: 10px;
+        right: -12px;
+        line-height: 60px;
     }
 }
