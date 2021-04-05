@@ -14,7 +14,7 @@
     --color-yellow: #ffd205;
     --color-yellow-radiant: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
     --color-red-radiant: linear-gradient(to right, #f76570 0%, #f78d65 100%);
-    --color-purple-radiant:linear-gradient(to right, #ba71da 0%, #da717b 100%);
+    --color-purple-radiant:linear-gradient(to right, #ba71da 0%, #da717b 100%); 
 }
 
 html, body {
