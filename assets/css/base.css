@@ -14,7 +14,7 @@
     --color-yellow: #ffd205;
     --color-yellow-radiant: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
     --color-red-radiant: linear-gradient(to right, #f76570 0%, #f78d65 100%);
-    --color-purple-radiant:linear-gradient(to right, #ba71da 0%, #da717b 100%); 
+    --color-purple-radiant: linear-gradient(to right, #ba71da 0%, #da717b 100%);
 }
 
 html, body {
@@ -43,6 +43,26 @@ section {
 
 .d-flex {
     display: flex;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+.d-block {
+    display: block;
 }
 
 textarea, input[type=text] {
@@ -104,6 +124,10 @@ textarea, input[type=text] {
 }
 
 .btn--sky {
+    background: var(--color-sky);
+}
+
+.btn--green {
     background: var(--color-green);
 }
 
@@ -145,11 +169,11 @@ textarea, input[type=text] {
     background: var(--color-purple-radiant);
 }
 
-.color-green{
+.color-green {
     color: var(--color-green);
 }
 
-.color-red{
+.color-red {
     color: var(--color-red);
 }
 
@@ -183,7 +207,7 @@ textarea, input[type=text] {
 }
 
 .destination-link {
-    padding: 15px;
+    padding: 10px;
 }
 
 .destination-info {
@@ -242,6 +266,7 @@ textarea, input[type=text] {
     color: var(--second-color);
     font-size: 16px;
     margin-bottom: 20px;
+    letter-spacing: 2px;
 }
 
 .content__heading-second {

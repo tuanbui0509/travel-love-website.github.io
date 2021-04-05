@@ -529,18 +529,18 @@ label.header__option-toggle {
 .content__about-price span:first-child {
     color: #dadada;
     text-decoration: line-through;
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .content__about-price span:nth-child(2) {
     margin: 0 15px;
     color: var(--bold-color);
-    font-size: 30px;
+    font-size: 26px;
 }
 
 .content__about-price span:last-child {
     color: var(--color-text-light);
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .content__about-btn {
@@ -682,11 +682,11 @@ label.header__option-toggle {
     margin-bottom: 30px;
 }
 
-.content__package-thumb{
+.content__package-thumb {
     position: relative;
 }
 
-.content__package-img-icon-wp{
+.content__package-img-icon-wp {
     position: absolute;
     padding: 10px;
     border-radius: 100%;
@@ -694,57 +694,150 @@ label.header__option-toggle {
     bottom: -20px;
 }
 
-.content__package-img-icon{
+.content__package-img-icon {
     width: 30px;
-
 }
 
-.content__package-info{
+.content__package-info {
     padding: 20px 20px 40px 20px;
 }
 
-.content__package-info-price,.content__package-info-title{
+.content__package-info-price, .content__package-info-title {
     border-bottom: 1px solid var(--color-border);
     padding: 20px 0;
 }
-.content__package-info-name{
+
+.content__package-info-name {
     font-size: 20px;
     font-weight: 600;
     color: var(--bold-color);
     display: block;
     margin-bottom: 10px;
 }
-.content__package-info-location{
+
+.content__package-info-location {
     font-size: 16px;
     font-weight: 400;
     color: var(--color-text-light);
     letter-spacing: 2px;
 }
 
-.content__package-info-price{
+.content__package-info-price {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.content__package-info-label{
+
+.content__package-info-label {
     font-size: 14px;
     font-weight: 400;
     letter-spacing: 2px;
     color: var(--bold-color);
 }
-.content__package-info-cost{
+
+.content__package-info-cost {
     font-size: 23px;
     color: var(--bold-color);
     font-weight: 500;
 }
-.content__package-info-text{
+
+.content__package-info-text {
     letter-spacing: 1px;
     font-size: 14px;
     margin: 20px 0;
 }
-.content__package-info-btn{
-    /* background: var(--color-yellow); */
+
+.content__package-info-btn {
     font-size: 16px;
+}
+
+.footer {
+    height: 100%;
+    padding: 50px 0;
+}
+
+.footer__head {
+    display: flex;
+    padding: 0px 0 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.footer__head-search {
+    margin-left: 120px;
+}
+
+.footer__head-search-input {
+    color: var(--color-text-light);
+    font-size: 16px;
+    margin-right: 20px;
+    padding-top: 12px!important;
+    padding-bottom: 12px!important;
+}
+
+.footer__head-search-btn {
+    font-size: 16px;
+    padding-top: 12px!important;
+    padding-bottom: 12px!important;
+}
+
+.footer__info-wp {
+    background-color: #fff;
+    padding: 40px;
+}
+
+.footer__info-left-thumb {
+    width: 150px;
+    margin-bottom: 30px;
+}
+
+.footer__info-left-social {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.footer__info-left-social-item {
+    color: var(--bold-color);
+    margin-right: 20px;
+}
+
+.footer__info-left-social-link {
+    font-size: 23px;
+}
+
+.footer__info-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer__info-right-title {
+    font-size: 15px;
+    color: var(--bold-color);
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+}
+
+.footer__info-right-item {
+    padding: 5px 0;
+}
+
+.footer__info-right-link {
+    color: var(--color-text-light);
+    font-size: 15px;
+}
+
+.footer__info-right-link i {
+    font-size: 12px;
+    margin-right: 10px;
+    color: rgb(226, 223, 223);
+}
+
+.footer__copyright-wp {
+    background: VAR(--color-sky);
+    padding: 15px;
 }
 
 @media only screen and (max-width: 1239px) {
@@ -829,6 +922,9 @@ label.header__option-toggle {
         right: -12px;
         line-height: 60px;
     }
+    .footer__info-right {
+        margin: 30px 0;
+    }
 }
 
 @media (max-width: 740px) {
@@ -854,5 +950,20 @@ label.header__option-toggle {
         top: 10px;
         right: -12px;
         line-height: 60px;
+    }
+    .footer__info-right {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 560px) {
+    .footer__copyright-wp {
+        justify-content: center;
+    }
+    .footer__copyright-wp .col:first-child .footer__copyright-title {
+        margin-bottom: 30px;
+    }
+    .content__banner {
+        height: 50vh;
     }
 }
