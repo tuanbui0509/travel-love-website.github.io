@@ -1,0 +1,115 @@
+:root {
+    --second-color: #878787;
+    --text-color: white;
+    --color-purple: #ba71da;
+    --color-text-light: #a3a3a3;
+    --color-text-menu: #9a9a9a;
+    --color-label-new: #1bbc9b;
+    --color-label-best: #14b9d5;
+    --color-label-hot: #f76570;
+}
+
+html, body {
+    font-size: 14px;
+    color: var(--text-color);
+    font-family: 'Poppins', sans-serif;
+    /* scroll-behavior: smooth;
+    overflow-x: hidden; */
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+    color: inherit;
+}
+
+.d-flex {
+    display: flex;
+}
+
+textarea, input[type=text] {
+    font-family: 'Poppins', sans-serif;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.align-item-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.justify-content-between {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.justify-content-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.bg-img {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-img-fixed {
+    background-attachment: fixed;
+}
+
+.btn {
+    padding: 5px 25px 5px 25px!important;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    display: block;
+    color: white;
+}
+
+.btn--purple {
+    background: var(--color-purple);
+}
+
+.heading-title {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.heading-label {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.heading-title--purple {
+    text-decoration: underline;
+    text-decoration-color: var(--color-purple);
+}
+
+.btn--orange-gradient {
+    background: linear-gradient(to right, #ffd205 0%, #ff9b05 100%);
+}
+
+.btn--red-gradient {
+    background: linear-gradient(to right, #f76570 0%, #f78d65 100%);
+}
+
+.btn--purple-gradient {
+    background: linear-gradient(to right, #ba71da 0%, #da717b 100%);
+}
