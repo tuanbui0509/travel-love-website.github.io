@@ -38,6 +38,7 @@
                     <a href="./index.html" class="header__logo-link"><img src="./assets/images/icon/logo.png" alt="logo"
                             class="header__logo-img img-responsive"></a>
                 </div>
+                <!-- Begin header menu -->
                 <div class="header__menu">
                     <input id='header__menu-dropdown' type='checkbox'>
                     <label for='header__menu-dropdown' class="header__menu-icon">
@@ -50,7 +51,9 @@
                         <ul class="header__menu-list">
                             <li class="header__menu-item"><a href="./" class="header__menu-link">HOME</a></li>
                             <li class="header__menu-item">
+                                <label for="drop-1" class="toggle header__menu-link">PACKAGES+</label>
                                 <a href="./" class="header__menu-link">PACKAGES</a>
+                                <input type="checkbox" id="drop-1" />
                                 <ul class="header__menu-sub">
                                     <li class="header__menu-sub-item"><a href="./"
                                             class="header__menu-sub-link header__menu-sub-link--hot">SEARCH1</a>
@@ -59,9 +62,12 @@
                                             class="header__menu-sub-link">SEARCH2</a>
                                     </li>
                                     <li class="header__menu-sub-item">
-                                        <a href="./" class="header__menu-sub-link">TOUR
+                                        <label for="drop-2" class="toggle">TOUR
+                                            PACKAGE</label>
+                                             <a href="./" class="header__menu-sub-link">TOUR
                                             PACKAGE</a>
-                                        <i class="fas fa-caret-right header__menu-sub-icon"></i>
+                                        <input type="checkbox" id="drop-2"/>
+                                        <!-- <i class="fas fa-caret-right header__menu-sub-icon"></i> -->
                                         <ul class="header__menu-sub">
                                             <li class="header__menu-sub-item"><a href="./"
                                                     class="header__menu-sub-link header__menu-sub-link--best">Carousel</a>
@@ -113,7 +119,6 @@
                                             3</a></li>
                                 </ul>
                             </li>
-
                             <li class="header__menu-item"><a href="./" class="header__menu-link">NEWS</a>
                                 <ul class="header__menu-sub">
                                     <li class="header__menu-sub-item"><a href="./"
@@ -158,6 +163,7 @@
                                 </ul>
                             </li>
                             <li class="header__menu-item"><a href="./" class="header__menu-link">CONTACT</a></li>
+
                             <li class="header__menu-item btn btn--purple"><a href="./" class="header__menu-link">BOOK
                                     NOW</a></li>
 
@@ -165,6 +171,9 @@
                     </div>
 
                 </div>
+
+                <!-- End header menu -->
+
                 <div class="header__option header__option--hide">
                     <div class="header__option-wrapper">
                         <input id='header__option-dropdown' type='checkbox'>
@@ -341,7 +350,7 @@
                 <div class="header__typology">
                     <div class="grid.container">
                         <div class="row header__typology-list">
-                            <div class="col col-l-o-4 col-md-o-3 col-xs-o-1">
+                            <div class="col col-l-o-4 col-md-o-3">
 
                             </div>
                             <div class="col col-l-4 col-md-6 col-xs-10">

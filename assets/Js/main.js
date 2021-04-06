@@ -5,7 +5,7 @@ let hide_option = header__nav.querySelector('.header__option--hide');
 console.log(hide_option);
 headerScroll = () => {
     if (window.pageYOffset > sticky) {
-        // header__nav.classList.add('sticky');
+        header__nav.classList.add('sticky');
         hide_option.style.display = 'none';
     }
 
