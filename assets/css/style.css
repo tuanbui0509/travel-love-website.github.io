@@ -6,6 +6,7 @@
     opacity: 0.9;
     position: relative;
     overflow: hidden;
+    z-index: 1100;
 }
 
 .header__nav {
@@ -17,7 +18,7 @@
 }
 
 .header__logo {
-    flex: 1;
+    flex: 2;
 }
 
 .header__logo-link {
@@ -87,7 +88,6 @@ label.header__option-toggle {
 }
 
 [type=checkbox]:not(:checked)+label, [type=checkbox]:checked+label {
-    transition: all 1s ease;
     position: relative;
     cursor: pointer;
 }
@@ -764,8 +764,14 @@ label.header__option-toggle {
     flex-wrap: wrap;
 }
 
-.footer__head-search {
-    margin-left: 120px;
+.footer__head-wp {
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__head-form {
+    display: flex;
+    justify-content: center;
 }
 
 .footer__head-search-input {
@@ -849,7 +855,7 @@ label.header__option-toggle {
     }
     .header__menu-list-wp {
         display: block;
-        position: absolute;
+        position: fixed;
         background: #555555;
         width: 250px;
         height: 100%;
@@ -857,6 +863,7 @@ label.header__option-toggle {
         right: -300px;
         bottom: 0;
         z-index: 1000;
+        transition: all 1s ease;
     }
     .header__menu-list {
         flex-direction: column;
@@ -872,10 +879,11 @@ label.header__option-toggle {
         border-radius: 3px;
         box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         top: 100%;
-        left: 5%;
+        /* left: 5%; */
         transition: all 0.25s linear;
         transition: all 05s ease-in-out;
-        z-index: 10000;
+        z-index: 1000;
+        display: none;
     }
     .header__menu-sub-item:hover {
         background: #6b6b6b;
@@ -885,16 +893,17 @@ label.header__option-toggle {
         left: 100%;
         top: 0;
         transition: all 05s ease-in-out;
+        display: none;
     }
     .header__menu-sub-link {
         font-size: 14px;
     }
     .header__menu-sub-item:hover>.header__menu-sub {
-        left: 5%;
-        top: 100%;
+        left: 0%;
+        margin-top: 15px;
     }
     .header__option {
-        display: none;
+        display: none!important;
     }
     .header__typology-item {
         margin-bottom: 20px;

@@ -25,10 +25,15 @@
 
 <body>
     <div id="wrapper">
+
+        <!-- Begin Back to top -->
+        <button onclick="toTopFunc()" id="btnToTop" title="Back to top"><i class="fas fa-car-alt"></i></button>
+        <!-- End Back to top -->
+
         <!-- Begin Header -->
         <header id="header"
             style="background: url(./assets/images/photo/background.jpg) no-repeat fixed center / cover;" class="">
-            <nav class="header__nav">
+            <nav class="header__nav" id="header__nav">
                 <div class="header__logo">
                     <a href="./index.html" class="header__logo-link"><img src="./assets/images/icon/logo.png" alt="logo"
                             class="header__logo-img img-responsive"></a>
@@ -108,17 +113,7 @@
                                             3</a></li>
                                 </ul>
                             </li>
-                            <li class="header__menu-item"><a href="./" class="header__menu-link">PAGE</a>
-                                <ul class="header__menu-sub">
-                                    <li class="header__menu-sub-item"><a href="./"
-                                            class="header__menu-sub-link header__menu-sub-link--new">Page
-                                            1</a></li>
-                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
-                                            2</a></li>
-                                    <li class="header__menu-sub-item"><a href="./" class="header__menu-sub-link">Page
-                                            3</a></li>
-                                </ul>
-                            </li>
+
                             <li class="header__menu-item"><a href="./" class="header__menu-link">NEWS</a>
                                 <ul class="header__menu-sub">
                                     <li class="header__menu-sub-item"><a href="./"
@@ -170,7 +165,7 @@
                     </div>
 
                 </div>
-                <div class="header__option">
+                <div class="header__option header__option--hide">
                     <div class="header__option-wrapper">
                         <input id='header__option-dropdown' type='checkbox'>
                         <label for='header__option-dropdown' class="header__option-icon">
@@ -853,24 +848,37 @@
             </div>
         </section>
 
+        <!-- Begin Footer -->
         <footer id="footer">
             <div class="wp-footer">
                 <div class="footer"
                     style="background: url(./assets/images/photo/parallax-7.jpg) no-repeat center / cover;">
                     <div class="footer__head">
-                        <div class="content__heading">
-                            <p class="content__heading-first">KEEP IN TOUCH</p>
-                            <h3 class="content__heading-second">Travel with Us</span>
-                            </h3>
+                        <div class="grid container">
+                            <div class="row footer__head-wp">
+                                <div class="col col-l-6 col-xs-12">
+                                    <div class="content__heading">
+                                        <p class="content__heading-first">KEEP IN TOUCH</p>
+                                        <h3 class="content__heading-second">Travel with Us</span>
+                                        </h3>
+                                    </div>
+                                </div>
+
+                                <div class="col col-l-6 col-xs-12">
+                                    <div class="footer__head-search">
+                                        <form action="" class="footer__head-form">
+                                            <input type="text" placeholder="Email"
+                                                class="footer__head-search-input btn">
+                                            <button class="footer__head-search-btn btn btn--sky ">SEND</button>
+                                        </form>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
-                        <div class="footer__head-search">
-                            <form action="" class="footer__head-form">
-                                <input type="text" placeholder="Email" class="footer__head-search-input btn">
-                                <button class="footer__head-search-btn btn btn--sky ">SEND</button>
-                            </form>
 
-                        </div>
+
 
                     </div>
                     <div class="footer__info">
@@ -996,11 +1004,12 @@
                 </div>
             </div>
         </footer>
+        <!-- End Footer -->
 
     </div>
 
 
-
+    <script src="./assets/Js/main.js"></script>
     <script src="./assets/js/jquery-3.6.0.min.js"></script>
     <script src="./owlcarousel/owl.carousel.min.js"></script>
 
